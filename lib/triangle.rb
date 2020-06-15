@@ -14,26 +14,26 @@ class Triangle
     end
     
     def kind
-         if one <= 0 || two <= 0 || three <= 0
+         if @one <= 0 || @two <= 0 || @three <= 0
             begin
                 raise TriangleError => error
                 puts error.message
             end
-        elsif one == nil || two == nil || three == nil
+        elsif @one == nil || @two == nil || @three == nil
             begin
                 raise TriangleError => error 
                 puts error.message
             end
-        elsif one + two <= three || one + three <= two || three + two <= one
+        elsif @one + @two <= @three || @one + @three <= @two || @three + @two <= @one
             begin
                 raise TriangleError => error
                 puts error.message
             end
         end
         
-        if one == two && one == three
+        if @one == @two && @one == @three
             :equilateral
-        elsif one == two || one == three || two == three
+        elsif @one == @two || @one == @three || @two == @three
             :isosceles
         else
             :scalene
