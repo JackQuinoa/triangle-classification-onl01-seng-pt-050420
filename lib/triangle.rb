@@ -1,36 +1,3 @@
-# class Triangle
-  
-#   attr_accessor :side_one, :side_two, :side_three
-#   attr_reader :isosceles, :equilateral, :scalene
-  
-#   def initialize(side_one, side_two, side_three)
-#     @side_one = side_one
-#     @side_two = side_two
-#     @side_three = side_three
-#   end
-  
-#   class TriangleError < StandardError
-#     def error 
-#       if @side_one == @side_two && @side_one == @side_three
-#         return :equilateral
-#       elsif @side_one == @side_two || @side_one = @side_three
-#         return @isosceles      
-#       else @scalene
-#     # "Side length must be greater than 0.  The sum of two sides must be greater than the third." 
-#       end
-#     end
-#   end
-  
-#   def kind 
-#       begin
-#         raise TriangleError
-#       rescue TriangleError => error
-#           puts error
-#       end 
-#   end
-  
-# end
-
 class Triangle
   attr_accessor :one, :two, :three
   
