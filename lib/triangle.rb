@@ -53,11 +53,12 @@ class Triangle
             end
         elsif one == nil || two == nil || three == nil
             begin
-                raise TriangleError => message
+                raise TriangleError => messag
             end
         elsif one + two <= three || one + three <= two || three + two <= one
             begin
-                raise TriangleError => message
+                raise TriangleError => error
+                puts error.message
             end
         end
         
